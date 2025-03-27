@@ -20,7 +20,7 @@ This is the third project of the Software Engineering program at TripleTen. It w
 
 This webpage is deployed to Github Pages.
 
-- Deployment link:
+- Deployment link: https://github.com/Freeman-ops/se_project_spots
 
 ## Plan on improving the project
 

@@ -7,19 +7,18 @@
   height: 190px;
   width: 190px;
   margin-right: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .profile__add-btn {
   margin-left: auto;
-  margin-top: 138px;
+  margin-top: auto;
   width: 149px;
   height: 52px;
   color: #fcf5e5;
-  padding: 18px 32px;
-  border: 2px solid white;
-  border-radius: 10px;
-  background: transparent;
+  padding: 9px 16px;
+  border: none;
+  border-radius: 8px;
   background-color: #212121;
   display: flex;
   align-items: center;
@@ -27,6 +26,12 @@
   white-space: nowrap;
   gap: 8px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+}
+.profile__add-btn:hover {
+  opacity: 70%;
 }
 
 .profile__edit-btn {
@@ -38,8 +43,16 @@
   display: flex;
   color: #212121;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  opacity: 70%;
+  display: flex;
+  gap: 8px;
+  text-align: center;
 }
-
+.profile__edit-btn:hover {
+  opacity: 100%;
+}
 .profile__column {
   display: flex;
   flex-direction: column;
@@ -49,10 +62,14 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
+  color: #212121;
 }
 .profile__description {
   margin: 0;
   color: #212121b3;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 500;
 }
 @media screen and (max-width: 627px) {
   .profile {
@@ -78,20 +95,11 @@
     margin: 0 0 20px;
   }
   .profile__add-btn {
-    display: flex;
     justify-content: center;
     margin: 0;
     width: 100%;
   }
   .profile__edit-btn {
-    display: flex;
     justify-content: center;
-    margin-top: auto;
-    border: none;
-    background: none;
-    padding: 0;
-    cursor: pointer;
-    color: #212121b3;
-    font-weight: 500;
   }
 }
