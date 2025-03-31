@@ -37,9 +37,12 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 353px;
   display: block;
+  max-width: 353px;
   min-width: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 @media screen and (max-width: 627px) {
   .card__image {
@@ -49,5 +52,6 @@
   .card__title {
     line-height: 100%;
     font-size: 16px;
+    max-width: 288px;
   }
 }
