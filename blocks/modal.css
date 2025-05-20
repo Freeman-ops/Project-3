@@ -9,6 +9,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  pointer-events: none;
 }
 .modal__header {
   display: flex;
@@ -17,7 +21,14 @@
 }
 
 .modal_is-opened {
+  opacity: 1;
   visibility: visible;
+  pointer-events: auto;
+}
+.modal_is-closing {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .modal__container {
   max-width: 730px;
