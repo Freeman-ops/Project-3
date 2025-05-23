@@ -66,27 +66,8 @@ function handleNewPostSubmit(evt) {
   // Geting value from form
   const imageUrl = cardImageInput.value;
   const caption = cardCaptionInput.value;
-
-  // Creating new card
-  const newCard = document.createElement("li");
-  newCard.classList.add("card");
-  newCard.innerHTML = `
-    <img src="${imageUrl}" alt="${caption}" class="card__image" />
-    <div class="card__content">
-      <h2 class="card__title">${caption}</h2>
-      <button type="button" class="card__like-btn"></button>
-    </div>
-  `;
-
-  // add a new card to the top of the list
-  cardsList.prepend(newCard);
-
-  //smooth closing of the model
-  closeModalWithTransition(newPostModal);
-
-  // clean the form
-  cardImageInput.value = "";
-  cardCaptionInput.value = "";
+  console.log(imageUrl);
+  console.log(caption);
 }
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);
